@@ -1,0 +1,23 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+    gateway:
+      routes:
+        - id: mall-admin
+          uri: lb://mall-admin
+          predicates:
+            - Path=/mall-admin/**
+          filters:
+            - StripPrefix=1
+  application:
+    name: mall-gateway
+logging:
+  level:
+    org:
+      springframework:
+        cloud:
+          gateway: debug
+server:
+  port: 8082
