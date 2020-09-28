@@ -1,8 +1,13 @@
+server:
+  port: 8082
 spring:
   cloud:
     nacos:
       discovery:
         server-addr: localhost:8848
+        locator:
+          lower-case-service-id: true
+          enabled: true
     gateway:
       routes:
         - id: mall-admin
@@ -10,6 +15,14 @@ spring:
           predicates:
             - Path=/mall-admin/**
           filters:
+            - SwaggerHeaderFilter
+            - StripPrefix=1
+        - id: mall-order
+          uri: lb://mall-order
+          predicates:
+            - Path=/mall-order/**
+          filters:
+            - SwaggerHeaderFilter
             - StripPrefix=1
   application:
     name: mall-gateway
@@ -19,5 +32,4 @@ logging:
       springframework:
         cloud:
           gateway: debug
-server:
-  port: 8082
+
