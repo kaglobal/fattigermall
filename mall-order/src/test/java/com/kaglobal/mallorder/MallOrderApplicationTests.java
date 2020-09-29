@@ -1,4 +1,4 @@
-package com.fattiger.mallorder;
+package com.kaglobal.mallorder;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

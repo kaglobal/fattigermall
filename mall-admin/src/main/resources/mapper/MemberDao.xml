@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 医院信息系统数据图片 -->
+<mapper namespace="com.kaglobal.malladmin.dao.MemberDao">
+
+    <resultMap id ="UserInfoMap" type="com.kaglobal.malladmin.entity.Member">
+        <result column="id" property="id"/>
+        <result column="member_name" property="memberName"/>
+        <result column="member_age" property="memberAge"/>
+    </resultMap>
+
+    <select id = "queryAllUsers" resultMap="UserInfoMap">
+        select
+          id,
+          member_name,
+          member_age
+        from
+          member
+    </select>
+</mapper>

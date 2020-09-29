@@ -1,4 +1,4 @@
-package com.fattiger.mallorder.rest.v1;
+package com.kaglobal.mallorder.config;
 
 import com.github.xiaoymin.knife4j.spring.annotations.EnableKnife4j;
 import org.springframework.context.annotation.Bean;

@@ -1,4 +1,4 @@
-package com.fattiger.mallgateway.common;
+package com.kaglobal.mallgateway.common;
 
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

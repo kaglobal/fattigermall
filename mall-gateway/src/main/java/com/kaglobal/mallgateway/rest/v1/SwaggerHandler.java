@@ -1,4 +1,4 @@
-package com.fattiger.mallgateway.rest.v1;
+package com.kaglobal.mallgateway.rest.v1;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

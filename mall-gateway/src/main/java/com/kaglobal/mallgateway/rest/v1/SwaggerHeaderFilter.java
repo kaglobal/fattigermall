@@ -1,6 +1,6 @@
-package com.fattiger.mallgateway.rest.v1;
+package com.kaglobal.mallgateway.rest.v1;
 
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.cloud.gateway.filter.GatewayFilter;
 import org.springframework.cloud.gateway.filter.factory.AbstractGatewayFilterFactory;
 import org.springframework.context.annotation.Configuration;

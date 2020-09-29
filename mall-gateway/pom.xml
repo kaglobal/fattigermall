@@ -6,7 +6,6 @@
         <groupId>com.kaglobal</groupId>
         <artifactId>fattiger-mall</artifactId>
         <version>1.0.0-SNAPSHOT</version>
-        <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.fattiger</groupId>
     <artifactId>mall-gateway</artifactId>
