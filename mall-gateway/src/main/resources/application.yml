@@ -24,6 +24,8 @@ spring:
           filters:
             - SwaggerHeaderFilter
             - StripPrefix=1
+      loadbalancer:
+        use404: true
   application:
     name: mall-gateway
 logging:

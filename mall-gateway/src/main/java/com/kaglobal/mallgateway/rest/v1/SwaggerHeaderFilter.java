@@ -26,6 +26,7 @@ public class SwaggerHeaderFilter extends AbstractGatewayFilterFactory {
         return (exchange, chain) -> {
             ServerHttpRequest request = exchange.getRequest();
             String path = request.getURI().getPath();
+            System.out.println("嘀嘀嘀"+path+URI);
             if (!StringUtils.endsWithIgnoreCase(path,URI )) {
                 return chain.filter(exchange);
             }
