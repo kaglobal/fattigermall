@@ -15,14 +15,14 @@ spring:
           predicates:
             - Path=/mall-admin/**
           filters:
-            - SwaggerHeaderFilter
+#            - SwaggerHeaderFilter
             - StripPrefix=1
         - id: mall-order
           uri: lb://mall-order
           predicates:
             - Path=/mall-order/**
           filters:
-            - SwaggerHeaderFilter
+#            - SwaggerHeaderFilter
             - StripPrefix=1
       loadbalancer:
         use404: true

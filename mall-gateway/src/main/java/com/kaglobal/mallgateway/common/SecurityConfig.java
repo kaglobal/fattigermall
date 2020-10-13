@@ -1,5 +1,4 @@
 package com.kaglobal.mallgateway.common;
-/*
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -9,7 +8,6 @@ import org.springframework.security.core.userdetails.MapReactiveUserDetailsServi
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.web.server.SecurityWebFilterChain;
-*/
 
 /**
  * @ClassName SecurityConfig
@@ -18,14 +16,14 @@ import org.springframework.security.web.server.SecurityWebFilterChain;
  * @Date 2020/10/12 10:51
  * @Version 1.0.0
  **/
-/*@Configuration
-@EnableWebFluxSecurity*/
+@Configuration
+@EnableWebFluxSecurity
 public class SecurityConfig {
 
-  /*  *//**
+  /**
      * 用户的接口类
      * @return
-     *//*
+     */
     @Bean
     public MapReactiveUserDetailsService userDetailsService() {
         //自定义一个用户
@@ -37,11 +35,11 @@ public class SecurityConfig {
         return new MapReactiveUserDetailsService(user);
     }
 
-    *//**
+    /**
      * 主要过滤配置类
      * @param http
      * @return
-     *//*
+     */
     @Bean
     public SecurityWebFilterChain springSecurityFilterChain(ServerHttpSecurity http) {
         http
@@ -53,5 +51,5 @@ public class SecurityConfig {
                 .httpBasic().and()
                 .formLogin();
         return http.build();
-    }*/
+    }
 }
