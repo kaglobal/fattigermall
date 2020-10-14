@@ -7,6 +7,7 @@ import com.kaglobal.malladmin.entity.MemberPage;
 import com.kaglobal.mallcommon.base.ResponseDataModel;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -26,6 +27,8 @@ import java.util.List;
 @Api(tags = "测试记录",description = "测试记录")
 public class TestController {
 
+    @Value("${server.port}")
+    private  String  port;
     private  MemberBizService memberBizService;
     TestController(MemberBizService memberBizService){
         this.memberBizService = memberBizService;
@@ -33,7 +36,7 @@ public class TestController {
     @RequestMapping(value = "/test",method = RequestMethod.GET)
     public  String test(){
 
-        return "hello";
+        return "hello"+port;
     }
     @RequestMapping(value = "/mall-admin/test",method = RequestMethod.GET)
     public ResponseDataModel<List<Member>> test1(){
