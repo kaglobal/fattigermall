@@ -1,0 +1,29 @@
+{
+  "projectDir" : "E:\\workspace-talent",
+  "basePackagePath" : "com.expect.cloud",
+  "moduleName" : "search",
+  "ftlParamList" : [ {
+    "templateName" : "${tableUpperCamelCase}[java].ftl",
+    "projectSubDir" : "/soft-talent-search",
+    "packagePath" : "${basePackagePath}.${moduleName}.domain"
+  }, {
+    "templateName" : "${tableUpperCamelCase}Condition[java].ftl",
+    "projectSubDir" : "/soft-talent-search",
+    "packagePath" : "${basePackagePath}.${moduleName}.domain.condition"
+  }, {
+    "templateName" : "${tableUpperCamelCase}ServiceImpl[java].ftl",
+    "projectSubDir" : "/soft-talent-search",
+    "packagePath" : "${basePackagePath}.${moduleName}.service.impl"
+  }, {
+    "templateName" : "${tableUpperCamelCase}Service[java].ftl",
+    "projectSubDir" : "/soft-talent-search",
+    "packagePath" : "${basePackagePath}.${moduleName}.service"
+  }, {
+    "templateName" : "${tableUpperCamelCase}Controller[java].ftl",
+    "projectSubDir" : "/soft-talent-search",
+    "packagePath" : "${basePackagePath}.${moduleName}.controller"
+  } ],
+  "searchFeilds" : {
+    "IB_CHAT_CONTENT" : [ "CHAT_USER_ID", "CHAT_CONTENT", "CREATE_TIME", "DELETE_FLAG" ]
+  }
+}
