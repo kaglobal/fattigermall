@@ -11,4 +11,5 @@ import com.kaglobal.malladmin.entity.PmsAlbumPic;
  */
 public interface PmsAlbumPicDAO extends BaseMapper<PmsAlbumPic> {
 
+
 }
